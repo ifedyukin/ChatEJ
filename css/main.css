@@ -1,0 +1,92 @@
+body{
+    text-align: center;
+}
+
+section{
+    width: 1000px;
+    margin: 25px auto;
+}
+
+.login_panel{
+    width: 300px;
+}
+
+.login_panel input{
+    margin-bottom: 12px;
+}
+
+.login_panel button{
+    width: 100%;
+}
+
+.ppanel-left{
+    float: left;
+    width: 77%;
+}
+
+.input-group-lg{
+    margin-top: 12px;
+}
+
+.user_avatar{
+    height: 150px;
+    width: 150px;
+}
+
+.user_left{
+    height: 100%;
+    float: left;
+    width: 20%;
+}
+
+.user_left button{
+    margin-top: 12px;
+    width: 70%;
+}
+
+.list-group{
+    margin-bottom: 0;
+}
+
+.panel-body{
+    overflow: auto;
+}
+
+.user_list{
+    height: 354px;
+}
+
+.chat_messages{
+    height: 300px;
+}
+
+.ppanel-right{
+    float: left;
+    margin-left: 1%;
+    width: 17%;
+    margin-top: -360px;
+}
+
+.well{
+    margin-top: 10px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+.userpic{
+    margin-top: 10px;
+    float: left;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+}
+
+.message_info{
+    text-align: left;
+    margin-left: 80px;
+    font-size: 16px;
+}
+
+.label-white{
+    background-color: #BABABA;
+}

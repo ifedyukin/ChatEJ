@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Java Chat</title>
-    <link rel="stylesheet" href="style.css" />
+	<meta charset="utf-8">
+	<title>Java Chat</title>
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 </head>
+
 <body>
-    <div id="content">
-    <div id="top">
-        <div id="hello">Здравствуйте, <a href="#"><input id="nickname" type="text"></a>!</div>
-        <div id="exit"><a href="#">Выйти</a></div>
-    </div>
-    <div id="main">
-        <div id="chat">
-            <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-             <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-             <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-             <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-             <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-             <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-             <div class="message"><span class="you">2011-11-15 16:02:41 <a href="#">HotFix</a>: </span>как пропатчить KDE под FreeBSD?</div>
-            <div class="message"><span class="admin">2011-11-15 16:12:41 <a href="#">Admin</a>: </span>это моё первое сообщение</div>
-            <div class="message"><span class="user">2011-11-15 16:22:41 <a href="#">User_2</a>: </span>привет :)</div>
-        </div>
-        <div id="users">
-            <ul>
-                <li><span class="admin"><a href="#">Admin</a></span></li>
-                <li><span class="you"><a href="#">HotFix</a></span></li>
-                <li><span class="user"><a href="#">User_2</a></span></li>
-            </ul>
-        </div>
-    </div>
-    <div id="message_form">
-        <!--<form action="post" name="new_message">-->
-        <textarea id="msg_text" autofocus placeholder="Введите сообщение..."></textarea>
-        <!--<button value="submit" onclick="send()">Отправить</button></form>-->
-        <button onclick="send()">Отправить</button>
-    </div>
-    </div>
-    <script language="JavaScript" src="script.js"></script>
+	<h1>Java Chat</h1>
+
+	<section>
+
+		<div class="panel panel-primary ppanel-left">
+			<div class="panel-heading">
+				<h3 class="panel-title">Messages</h3>
+			</div>
+			<div class="chat_messages panel-body">
+				<div class="message">
+					<img class="userpic" alt="igor_pic" src="avatars/ava.png">
+					<div class="message_info">
+						<span class="label label-success">Nikita</span> <span class="label label-default">24.01.17 18:50</span>
+					</div>
+					<div class="well well-sm">
+						Сообщение администратора
+					</div>
+				</div>
+
+				<div class="message">
+					<img class="userpic" alt="igor_pic" src="avatars/ava.png">
+					<div class="message_info">
+						<span class="label label-warning">Igor</span> <span class="label label-default">24.01.17 18:55</span>
+					</div>
+					<div class="well well-sm">
+						Сообщение модератора
+					</div>
+				</div>
+
+				<div class="message">
+					<img class="userpic" alt="igor_pic" src="avatars/ava.png">
+					<div class="message_info">
+						<span class="label label-primary">User</span> <span class="label label-default">24.01.17 19:00</span>
+					</div>
+					<div class="well well-sm">
+						Сообщение твоё
+					</div>
+				</div>
+
+				<div class="message">
+					<img class="userpic" alt="igor_pic" src="avatars/ava.png">
+					<div class="message_info">
+						<span class="label label-white">Tester</span> <span class="label label-default">24.01.17 19:05</span>
+					</div>
+					<div class="well well-sm">
+						Сообщение обычного юзера
+					</div>
+				</div>
+
+				<div class="message">
+					<img class="userpic" alt="igor_pic" src="avatars/ava.png">
+					<div class="message_info">
+						<span class="label label-danger">Retard</span> <span class="label label-default">24.01.17 19:10</span>
+					</div>
+					<div class="well well-sm">
+						Сообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненногоСообщение забаненного
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="input-group ppanel-left">
+			<input type="text" class="form-control" aria-label="...">
+			<div class="input-group-btn">
+				<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span></button>
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+					<!--<span class="caret"></span>-->
+					<span class="sr-only">Toggle Dropdown</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Сюда</a></li>
+					<li><a href="#">Смайлы</a></li>
+					<li><a href="#">Ебани</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Тут отделенная хуйня</a></li>
+				</ul>
+				<button class="btn btn-success" type="button"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+			</div>
+		</div>
+
+		<div class="panel panel-primary ppanel-right">
+			<div class="panel-heading">
+				<h3 class="panel-title">Users</h3>
+			</div>
+			<div class="user_list panel-body">
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-success">Админ</a>
+					<a href="#" class="list-group-item list-group-item-danger">Забанен</a>
+					<a href="#" class="list-group-item list-group-item-warning">Модератор</a>
+					<a href="#" class="list-group-item list-group-item-info">Это ты</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+					<a href="#" class="list-group-item">Любой юзер</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<script src="jquery/dist/jquery.min.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
